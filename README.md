@@ -1,6 +1,6 @@
 # ChatlogGrapher
 
-Create pretty graphs of chat history.
+Create pretty graphs of chat log history.
 
 Supports:
 - Facebook Messenger (JSON export)
