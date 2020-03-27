@@ -28,4 +28,7 @@ How to use:
   - `jupyter notebook` and open the main notebook file
   - TODO: add direct python code that can do everything?
 
+Potential future features?
+- Support for group chat data (> 2 person chats)
+
 Inspired by https://github.com/rohanp/MessengerGrapher (which handles messages through Facebook Messenger only)
