@@ -23,7 +23,8 @@ How to use:
     - Be sure to *include* your Hangouts (chat) data!
     - Unzip your download, rename the folder named "Takeout" to something like "google-YourUsername", and put it in `data`
 - Install the dependencies
-  - Jupyter (Notebook), numpy, pandas, matplotlib
+  - Jupyter (Notebook), numpy, pandas, matplotlib, gensim, nltk
+  - TODO: create a nice handy environment.yml to do this for you
 - Run the code
   - `jupyter notebook` and open the main notebook file
   - TODO: add direct python code that can do everything?
