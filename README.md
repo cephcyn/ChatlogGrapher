@@ -1,6 +1,6 @@
 # ChatlogGrapher
 
-Create pretty graphs of chat log history.
+Create pretty graphs of chat log history!
 
 Supports:
 - Facebook Messenger (JSON export)
@@ -33,3 +33,37 @@ Potential future features?
 - Support for group chat data (> 2 person chats)
 
 Inspired by https://github.com/rohanp/MessengerGrapher (which handles messages through Facebook Messenger only)
+
+## Examples
+
+![Graph of how many people I talk to each day](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/people_count_dates.png "Graph of how many people I talk to each day over time")
+
+
+![Graph of how many people I've talked to at some times of day](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/people_count_times.png "Graph of how many people I've talked to at some times of day")
+
+
+![Graph of how many messages I send each day](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_dates.png "Graph of how many messages I send each day")
+
+
+![Graph of how many messages I've sent at some times of day](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_times.png "Graph of how many messages I've sent at some times of day")
+
+
+![Graph of the distribution of all message lengths recorded](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_length.png "Graph of the distribution of all message lengths recorded")
+
+
+![Graph of how many total messages I've exchanged with the top 6 people I contact over time](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_cumulative_top6.png "Graph of how many total messages I've exchanged with the top 6 people I contact over time")
+
+
+![Graph of how actively I've exchanged messages with the top 6 people I contact](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_active_top6.png "Graph of how actively I've exchanged messages with the top 6 people I contact")
+
+
+![Graph of what times of day I've exchanged messages with the top 6 people I contact](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_times_top6.png "Graph of what times of day I've exchanged messages with the top 6 people I contact")
+
+
+![Graph of what times of day I've exchanged messages with specific people](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_count_times_selected.png "Graph of what times of day I've exchanged messages with specific people")
+
+
+![Graph of the message length distributions for messages I've exchanged with specific people](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_length_selected.png "Graph of the message length distribution for messages I've exchanged with specific people")
+
+
+![Graph of what times of day I've exchanged messages with specific people (Normalized for how many messages I've sent them in total over the time period)](https://raw.githubusercontent.com/cephcyn/ChatlogGrapher/master/outputs/messages_normcount_times_selected.png "Graph of what times of day I've exchanged messages with specific people (Normalized for how many messages I've sent them in total over the time period)")
