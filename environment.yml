@@ -1,0 +1,12 @@
+name: chatloggrapher
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab
+  - numpy
+  - pandas
+  - matplotlib
+  - gensim
+  - nltk
+prefix: /home/cephcyn/miniconda3/envs/chatloggrapher

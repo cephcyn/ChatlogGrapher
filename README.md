@@ -1,14 +1,14 @@
 # ChatlogGrapher
 
-Create pretty graphs of chat log history!
+Create pretty graphs of chat log history! Can combine information from multiple chat services all at once.
 
 Supports:
 - Facebook Messenger (JSON export)
-- Discord (GDPR data request, TODO: DiscordChatExporter???)
+- Discord (GDPR data request)
 - Google Hangouts (Takeout)
-- please let me know if there is another chat or chat log scraper service that provides consistently formatted data dumps that I can add support for!
 
-How to use:
+## How to use
+
 - Download your data
   - Facebook Messenger
     - instructions at https://www.facebook.com/help/1701730696756992
@@ -23,14 +23,26 @@ How to use:
     - Be sure to *include* your Hangouts (chat) data!
     - Unzip your download, rename the folder named "Takeout" to something like "google-YourUsername", and put it in `data`
 - Install the dependencies
-  - Jupyter (Notebook), numpy, pandas, matplotlib, gensim, nltk
-  - TODO: create a nice handy environment.yml to do this for you
+  - Make sure you have Conda installed
+  - Set up the Conda environment: `conda env create -f environment.yml`
+  - Activate the conda environment: `conda activate chatloggrapher`
+  - If you don't want to have Conda installed... make sure you have the dependency packages installed: JupyterLab, numpy, pandas, matplotlib, gensim, nltk
 - Run the code
-  - `jupyter notebook` and open the main notebook file
-  - TODO: add direct python code that can do everything?
+  - Set up `aliases.json` to map multiple names/nicknames/usernames to each person's actual name
+    - This is especially relevant for Discord, since Discord usernames are almost always different from someone's actual name and will also always include the 4-digit username ID.
+    - If you have contacted the same person on multiple platforms where they may be listed under multiple names/usernames, make sure that those names are tied all to the same single name in the aliases file.
+    - See the default lines in there for examples of how to write those lines.
+    - Map any name/username to "null" to ignore it entirely.
+  - Run `jupyter lab` and open the main notebook file `data_processing.ipynb`
+  - Run the cells in order!
+
+## Other Info & Credits
 
 Potential future features?
-- Support for group chat data (> 2 person chats)
+- Support for Facebook group chat data (> 2 person chats)
+- Support for DiscordChatExporter data
+- Support for any other chat or chat log scraper service that provides consistently formatted data dumps!
+- Put the code that's currently in `data_processing.ipynb` into an independent Python file of its own, or something that can be more easily run!
 
 Inspired by https://github.com/rohanp/MessengerGrapher (which handles messages through Facebook Messenger only)
 
